@@ -165,3 +165,16 @@ val element = 10 // Element to be inserted
 
 val newList = myList.patch(index, List(element), 0)
 ```
+
+```scala
+def checkNumber(number: Double): String = {
+  if (number > 0) "Positive"
+  else if (number == 0) "Zero"
+  else "Negative"
+}
+
+val number = -5.3
+val result = checkNumber(number)
+println(s"The number $number is $result.")
+
+```
