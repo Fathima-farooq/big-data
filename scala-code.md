@@ -166,7 +166,7 @@ val element = 10 // Element to be inserted
 val newList = myList.patch(index, List(element), 0)
 ```
 
-```
+```scala
 def removeElement[A](list: List[A], element: A): List[A] = {
   list.filterNot(_ == element)
 }
@@ -189,4 +189,17 @@ val number = -5.3
 val result = checkNumber(number)
 println(s"The number $number is $result.")
 
+```
+
+```scala
+def isPalindrome(num: Int): Boolean = {
+  val str = num.toString
+  str == str.reverse
+}
+
+val input = 12321
+if (isPalindrome(input))
+  println(s"$input is a palindrome.")
+else
+  println(s"$input is not a palindrome.")
 ```
