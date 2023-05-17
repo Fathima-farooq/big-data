@@ -165,3 +165,15 @@ val element = 10 // Element to be inserted
 
 val newList = myList.patch(index, List(element), 0)
 ```
+
+```
+def removeElement[A](list: List[A], element: A): List[A] = {
+  list.filterNot(_ == element)
+}
+
+val myList = List(1, 2, 3, 4, 5)
+val elementToRemove = 3
+
+val newList = removeElement(myList, elementToRemove)
+println(newList)
+```
